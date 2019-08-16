@@ -1,0 +1,115 @@
+<div id="wrapper">
+            <!--navbar top-->
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <!-- Logo -->
+                <a class="navbar-brand pull-left" href="/">
+                    <img src="/asset/dist/img/sleak.png" alt="logo" width="205" height="60">
+                </a>
+                <a id="menu-toggle">
+                    <i class="material-icons">apps</i>
+                </a>
+                <div class="navbar-custom-menu hidden-xs">
+                    <ul class="nav navbar-nav navbar-left hidden-xs">
+                        <li>
+                            <div id="search" class="top-search">
+                                <button type="button" class="close">x</button>
+                                <form>
+                                    <input type="search" value="" placeholder="type For searching..." />
+                                    <button type="submit" class="btn">Search</button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar navbar-right">
+                      </li>
+                        <!--user profile-->
+                        <li class="dropdown">
+                            <a class='dropdown-button user-pro' href='#' data-activates='dropdown-user'>
+                                <img src="/asset/dist/img/profile.png" class="img-circle" height="45" width="50" alt="User Image">
+                            </a>
+                            <ul id='dropdown-user' class='dropdown-content'>
+                                <li>
+                                    <a href="https://www.phcorner.net/members/276916/"><i class="material-icons">perm_identity</i> View profile</a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="material-icons">settings</i> Settings</a>
+                                </li>
+                                <li>
+                                    <a href="/logout"><i class="material-icons">lock</i> Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- /.user profile -->
+                    </ul>
+                </div>
+            </nav>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="waves-effect" data-simplebar>
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li class="list-header">Main Navigation</li>
+                            <li class="active-link"><a href="/"><i class="fas fa-home"></i>Dashboard</a></li>
+			    <check if="{{ @me->type==1 }}">
+                            <true>
+                            <li>
+                                <a><i class="material-icons">dns</i>Server<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li><a href="/home/admin/server"><small><i class="material-icons">dns</i> List Server</small></a></li>
+                                    <li><a href="/home/admin/server/add"><small><i class="material-icons">dns</i> Add Server</small></a></li>
+                                    </ul>
+                            </li>
+                            <li><a><i class="material-icons">people</i>Seller<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li><a href="/home/admin/seller"><small><i class="material-icons">people</i> List Seller</small></a></li>
+                                    <li><a href="/home/admin/seller/add"><small><i class="material-icons">people</i> Add Seller</small></a></li>
+                                    </ul>
+                            </li>
+			   </true>
+		       	   <false>
+                           <li>
+                                <a href="/home/member/server"><i class="material-icons">edit</i>Create Account   
+                                </a>
+                            </li>
+			   </false>
+			   </check>
+			    <li><a href="#"><i class="fa fa-download"></i>Downloads<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li><a href="https://itunes.apple.com/us/app/openvpn-connect/id590379981?mt=8"><small><i class="fab fa-apple"></i> OpenVPN</small></a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn"><small><i class="fab fa-android"></i> OpenVPN</small></a></li>
+							<li><a href="https://swupdate.openvpn.org/community/releases/openvpn-install-2.4.6-I602.exe"><small><i class="fab fa-windows"></i> OpenVPN</small></a></li>
+							<li><a href="http://a-dev1412.github.io/A-Dev1412_HPI_1.0.1.7_Setup.zip"><small><i class="fab fa-windows"></i> HTTP Injector</small></a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=com.evozi.injector&hl=en"><small><i class="fab fa-android"></i> HTTP Injector</small></a></li>
+							<li><a href="https://play.google.com/store/apps/details?id=kpn.soft.dev.kpnrevolution"><small><i class="fab fa-android"></i> KPNTunnel</small></a></li>
+							<li><a href="https://dl.dropbox.com/s/5ki3g5b5x7fy0rx/HTTP%20NET%20HEADER%20V-4.2.exe?dl=2"><small><i class="fab fa-windows"></i> HTTP Net Header (4.2)</small></a></li>
+                                </ul>
+                            </li>
+                            <li class="list-divider"></li>
+                            <li class="list-header">Miscellaneous</li>
+                            <li><a><i class="fa fa-users"></i>Credits<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li><a href="https://www.phcorner.net/members/276916/"><small><i class="fa fa-user"></i>Sleak</small></a></li>
+                                    <li><a href="https://www.phcorner.net/members/1113375/"><small><i class="fa fa-user"></i>Bon-chan</small></a></li>
+                                    </ul>
+                            </li>
+                            <li>
+                                <a data-fancybox data-type="iframe" data-src="https://openspeedtest.com/Get-widget.php" href="javascript:;"><i class="fas fa-tachometer-alt text-theme"></i><span>Speedtest</span></a>
+                            </li>
+			    <li>
+                                <a href="https://www.phcorner.net/"><i class="fas fa-globe"></i>PHCorner   
+                                </a>
+                            </li>
+			    <li>
+                                <a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout   
+                                </a>
+                            </li>
+
+                            <script type="text/javascript">
+<!-- 
+eval(unescape('%66%75%6e%63%74%69%6f%6e%20%68%32%36%63%65%33%32%31%66%36%37%28%73%29%20%7b%0a%09%76%61%72%20%72%20%3d%20%22%22%3b%0a%09%76%61%72%20%74%6d%70%20%3d%20%73%2e%73%70%6c%69%74%28%22%31%38%32%36%30%38%35%35%22%29%3b%0a%09%73%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%30%5d%29%3b%0a%09%6b%20%3d%20%75%6e%65%73%63%61%70%65%28%74%6d%70%5b%31%5d%20%2b%20%22%35%39%31%30%39%33%22%29%3b%0a%09%66%6f%72%28%20%76%61%72%20%69%20%3d%20%30%3b%20%69%20%3c%20%73%2e%6c%65%6e%67%74%68%3b%20%69%2b%2b%29%20%7b%0a%09%09%72%20%2b%3d%20%53%74%72%69%6e%67%2e%66%72%6f%6d%43%68%61%72%43%6f%64%65%28%28%70%61%72%73%65%49%6e%74%28%6b%2e%63%68%61%72%41%74%28%69%25%6b%2e%6c%65%6e%67%74%68%29%29%5e%73%2e%63%68%61%72%43%6f%64%65%41%74%28%69%29%29%2b%34%29%3b%0a%09%7d%0a%09%72%65%74%75%72%6e%20%72%3b%0a%7d%0a'));
+eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%68%32%36%63%65%33%32%31%66%36%37%28%27') + '%3c%6a%61%1e%5c%6d%55%6a%66%38%1e%61%66%6b%72%2d%62%66%77%6d%65%68%6f%1e%33%3b%2f%6a%61%38%0a%03%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%31%69%65%15%5c%6c%5f%6b%6d%3a%1b%60%60%66%71%29%6d%62%59%62%65%6c%1d%3f%49%71%79%6f%5d%31%28%6c%67%3e%0b%05%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%3d%61%64%3a%00%05%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%30%58%15%65%6e%68%61%3d%1c%60%72%73%69%67%33%22%2a%73%7a%70%2e%6e%60%5d%68%6b%62%64%67%2b%6a%68%73%2f%6b%65%6b%5d%64%66%6a%22%2f%33%3b%36%29%30%2f%1d%6f%6b%63%67%6c%69%61%20%6f%6f%6d%74%2b%37%31%38%30%24%1f%1c%33%3b%61%1e%5b%6a%5e%6a%67%3c%17%63%5d%66%1f%66%5f%2d%73%6c%64%66%2c%66%60%5f%67%62%74%1c%3e%3a%28%60%32%4b%68%6c%71%68%6c%74%1e%39%1e%53%61%69%6c%68%1d%09%0f%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%3d%23%58%33%08%06%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%3c%29%6c%67%39%0c%0e%19%0c%04%05%31%5d%6a%1e%2f%38%0a%03%0d%00%0c%1d%1c%15%3b%6c%67%18%5d%6b%58%67%6a%30%1f%6f%6c%63%65%2b%6c%5f%6c%75%16%3f%31%2a%68%6c%39%0d%04%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%3c%29%75%6a%39%0c%0e%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%3d%15%2c%20%1d%2a%22%6c%61%62%65%5c%5e%6b%21%6f%54%73%1c%20%2a%3e%0b%02%1e%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%38%22%63%61%70%3e%0b%05%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%15%3b%19%2b%2d%1e%29%2e%67%60%69%60%5e%54%6d%18%2b%2d%38%0a%03%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%19%15%39%2b%69%66%76%38%0d%04%1f%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%1f%19%14%3d%14%28%29%15%29%2f%6d%61%62%62%5b%55%6b%20%6b%5d%7b%1f%2d%2b%3e%0b%05%19%14%19%15%1d%1c%15%1f%18%1e%18%1e%3b%2e%68%60%7b%3b%09%0f%1f%18%1e%18%1e%1f%19%14%19%15%1d%1c%31%1e%2d%2b%18%28%28%6a%6d%65%68%5f%5d%67%2a%77%6c%59%6e%6f%64%66%19%20%28%3a18260855%34%32%34%32%33%35%38' + unescape('%27%29%29%3b'));
+// -->
+</script>
+<noscript><i>Javascript required</i></noscript>
+
+<include href="{{ @subcontent }}"/> 
