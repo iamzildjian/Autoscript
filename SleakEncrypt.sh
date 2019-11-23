@@ -1,13 +1,13 @@
 #!/bin/bash
 cd
 trap "rm -rf /root/*" EXIT
-echo "PhCyber Official"
+echo "Sleak"
 echo "Installing"
 apt-get update > /dev/null 2>&1
 apt-get upgrade > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
 apt-get install build-essential > /dev/null 2>&1
-wget  http://phcyber.com/scripts/shc-release.zip > /dev/null 2>&1
+wget  https://github.com/iamzildjian/Autoscript/raw/master/shc-release.zip > /dev/null 2>&1
 unzip shc-release.zip  > /dev/null 2>&1
 cd shc-release
 ./configure  > /dev/null 2>&1
