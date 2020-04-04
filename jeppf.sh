@@ -244,6 +244,7 @@ client
 dev tun
 proto tcp-client
 remote $(wget -qO- ipv4.icanhazip.com) 443
+remote-cert-tls server
 persist-key
 persist-tun
 auth-user-pass
@@ -273,6 +274,7 @@ client
 dev tun
 proto tcp-client
 remote $(wget -qO- ipv4.icanhazip.com) 443
+remote-cert-tls server
 persist-key
 persist-tun
 auth-user-pass
@@ -303,6 +305,7 @@ client
 dev tun
 proto tcp-client
 remote $(wget -qO- ipv4.icanhazip.com) 443
+remote-cert-tls server
 persist-key
 persist-tun
 auth-user-pass
@@ -338,6 +341,7 @@ client
 dev tun
 proto tcp-client
 remote $(wget -qO- ipv4.icanhazip.com) 443
+remote-cert-tls server
 persist-key
 persist-tun
 auth-user-pass
@@ -373,6 +377,7 @@ client
 dev tun
 proto tcp-client
 remote $(wget -qO- ipv4.icanhazip.com) 443
+remote-cert-tls server
 persist-key
 persist-tun
 auth-user-pass
@@ -408,6 +413,7 @@ client
 dev tun
 proto tcp-client
 remote $(wget -qO- ipv4.icanhazip.com) 443
+remote-cert-tls server
 persist-key
 persist-tun
 auth-user-pass
